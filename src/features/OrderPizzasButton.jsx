@@ -1,14 +1,9 @@
 import { Button } from '@mui/material';
-import { useDispatch, useSelector } from 'react-redux';
-
-import { cartActions, cartSelectors } from '../shared/redux';
 
 export const OrderPizzasButton = () => {
-  const dispatch = useDispatch();
+  const isCartItemsEmpty = undefined;
 
-  const isCartItemsEmpty = useSelector(cartSelectors.selectIsCartItemsEmpty);
-
-  const handleCheckOut = () => dispatch(cartActions.cartItemsOrdered());
+  const handleCheckOut = undefined;
 
   return (
     <Button

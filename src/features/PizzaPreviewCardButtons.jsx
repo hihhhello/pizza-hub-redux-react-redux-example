@@ -3,12 +3,9 @@ import { useSelector } from 'react-redux';
 
 import { AddCartItemButton } from '../features/AddCartItemButton';
 import { RemoveCartItemButton } from '../features/RemoveCartItemButton';
-import { cartSelectors } from '../shared/redux';
 
 export const PizzaPreviewCardButtons = ({ pizza, showCount }) => {
-  const pizzaCount = useSelector(
-    cartSelectors.selectCartItemCountById(pizza.id),
-  );
+  const pizzaCount = undefined;
 
   return (
     <Box

@@ -1,13 +1,11 @@
 import { Box, Typography } from '@mui/material';
-import { useSelector } from 'react-redux';
 
 import { Center } from '../components';
 import { OrderPizzasButton } from '../features/OrderPizzasButton';
-import { cartSelectors } from '../shared/redux';
 
 export const CartPage = () => {
-  const cartItems = useSelector(cartSelectors.selectCartItems);
-  const cartItemsTotal = useSelector(cartSelectors.selectCartItemsTotal);
+  const cartItems = undefined;
+  const cartItemsTotal = undefined;
 
   return (
     <Center>

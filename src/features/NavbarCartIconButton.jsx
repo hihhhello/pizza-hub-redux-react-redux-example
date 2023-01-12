@@ -1,11 +1,8 @@
 import { Badge, IconButton } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { useSelector } from 'react-redux';
-
-import { cartSelectors } from '../shared/redux';
 
 export const NavbarCartIconButton = () => {
-  const cartItemsCount = useSelector(cartSelectors.selectCartItemsCount);
+  const cartItemsCount = undefined;
 
   return (
     <IconButton>
